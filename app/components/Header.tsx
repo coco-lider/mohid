@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ShoppingCart, Search, User } from "lucide-react";
+import { ShoppingCart, Search, User, Watch } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export default function Header() {
@@ -25,7 +25,7 @@ export default function Header() {
   return (
     <header className="bg-black text-white py-4 px-6 flex justify-between items-center">
       <Link href="/" className="text-2xl font-bold">
-        <span>⌚ Mohid</span>
+        <span className="flex justify-center items-center"><Watch/> Mohid</span>
       </Link>
       <nav className="hidden md:flex gap-6 text-gray-300">
         <Link href="/" className={pathname === "/" ? "text-white" : "hover:text-white"}>Home</Link>
