@@ -11,14 +11,14 @@ export default function Hero() {
           </p>
           <div className="flex justify-center p-1.5 bg-[#FFFFFF] rounded-2xl gap-2 max-w-[420px] w-full border border-white">
             <div className="flex justify-center items-center">
-              <Search className="text-blue-600"/>
+              <Search className="text-blue-600" />
             </div>
             <input type="text" placeholder="Find the best brands" className="px-4 py-2 outline-0 rounded text-black w-64" />
             <button className="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded">Search</button>
           </div>
         </div>
         <img
-          src="/images/hero-watch.png"
+          src="/watch.png"
           alt="Hero Watch"
           className="w-72 md:w-96 mt-10 md:mt-0"
         />

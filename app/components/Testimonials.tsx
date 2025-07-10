@@ -15,7 +15,7 @@ export default function Testimonials() {
   ];
   return (
     <section className="py-16 bg-gray-100 text-center">
-      <h2 className="text-3xl font-bold mb-8">What People Say About Us</h2>
+      <h2 className="text-3xl font-bold text-gray-500 mb-8">What People Say About Us</h2>
       <div className="flex flex-wrap justify-center gap-8">
         {reviews.map((review) => (
           <div key={review.name} className="bg-white shadow p-6 rounded w-80">

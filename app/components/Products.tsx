@@ -26,7 +26,7 @@ export default function Products() {
 
   return (
     <section className="py-16 text-center bg-white" id="products">
-      <h2 className="text-3xl font-bold mb-8">Our Latest Products</h2>
+      <h2 className="text-3xl font-bold text-gray-500 mb-8">Our Latest Products</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4">
         {products.map(product => {
           const isInCart = cart.includes(product.id);
@@ -40,9 +40,9 @@ export default function Products() {
                 alt={product.title}
                 className="w-full h-48 object-contain mb-4 rounded"
               />
-              <h3 className="text-lg font-semibold mb-2">{product.title}</h3>
+              <h3 className="text-lg font-semibold text-gray-500 mb-2">{product.title}</h3>
               <div className="text-sm mb-4">
-                <span className="line-through text-gray-400 mr-2">
+                <span className="line-through text-gray-600 mr-2">
                   ${Math.round(product.price + product.price * (product.discountPercentage / 100))}
                 </span>
                 <span className="text-blue-600 font-bold">${product.price}</span>
